@@ -71,7 +71,7 @@
         android:required="false" />
 
     <application
-        android:label="Edge"
+        android:label="Edge Test"
         android:name=".EdgeApplication"
         android:icon="@mipmap/launcher_icon">
         <activity

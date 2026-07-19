@@ -44,7 +44,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "wtf.openstrap.openstrap_edge"
+        // FORK TEST BUILD: suffixed appId so this installs SIDE BY SIDE with a
+        // production install (different signature can't update in place). The
+        // namespace stays unsuffixed — all manifest component names resolve
+        // against it, so nothing else changes.
+        applicationId = "wtf.openstrap.openstrap_edge.test"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = maxOf(26, flutter.minSdkVersion) // Health Connect requires API 26+
